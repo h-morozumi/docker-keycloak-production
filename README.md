@@ -1,5 +1,5 @@
 # docker-keycloak-production
-Production-ready Docker image for Keycloak with PostgreSQL support and automated realm import
+Production-ready Docker image for Keycloak with  automated realm import.
 
 ## Setting Application Insights in Azure App Service / Container Apps
 
