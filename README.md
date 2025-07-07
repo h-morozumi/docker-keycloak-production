@@ -13,4 +13,6 @@ Application Insights provides powerful monitoring and diagnostics capabilities, 
    - `DEPLOYMENT_NAME`: The name of the deployment (e.g., "keycloak").
 
 ## References
+- [Keycloak](https://www.keycloak.org/)
+- [構成オプション - Azure Monitor Application Insights for Java - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/azure-monitor/app/java-standalone-config)
 - [anderly/keycloak-azure-container-apps: A customized Keycloak docker container designed to run on Azure Container Apps.](https://github.com/anderly/keycloak-azure-container-apps) 
