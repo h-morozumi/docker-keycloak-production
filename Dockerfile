@@ -6,7 +6,7 @@ ENV KC_HEALTH_ENABLED=true
 ENV KC_METRICS_ENABLED=true
 
 # Download OpenTelemetry Java agent for Application Insights integration
-ADD https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.5.4/applicationinsights-agent-3.5.4.jar /opt/applicationinsights-agent.jar
+ADD https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.7.3/applicationinsights-agent-3.7.3.jar /opt/applicationinsights-agent.jar
 
 WORKDIR /opt/keycloak
 
