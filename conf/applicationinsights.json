@@ -1,0 +1,64 @@
+{
+  "connectionString": "${APPLICATIONINSIGHTS_CONNECTION_STRING}",
+  "role": {
+    "name": "keycloak-service",
+    "instance": "${HOSTNAME:keycloak-instance}"
+  },
+  "sampling": {
+    "requestsPerSecond": 5.0,
+    "percentage": 100.0
+  },
+  "instrumentation": {
+    "logging": {
+      "level": "INFO"
+    },
+    "micrometer": {
+      "enabled": true
+    },
+    "jdbc": {
+      "enabled": true
+    },
+    "jms": {
+      "enabled": false
+    },
+    "kafka": {
+      "enabled": false
+    },
+    "mongo": {
+      "enabled": false
+    },
+    "redis": {
+      "enabled": false
+    },
+    "springScheduling": {
+      "enabled": false
+    }
+  },
+  "preview": {
+    "processors": [
+      {
+        "type": "attribute",
+        "actions": [
+          {
+            "key": "service.name",
+            "value": "keycloak",
+            "action": "insert"
+          },
+          {
+            "key": "service.version",
+            "value": "26.3.0",
+            "action": "insert"
+          }
+        ]
+      }
+    ],
+    "customDimensions": {
+      "environment": "${ENVIRONMENT:development}",
+      "deployment": "${DEPLOYMENT_NAME:local}"
+    }
+  },
+  "selfDiagnostics": {
+    "destination": "console",
+    "level": "INFO"
+  }
+}

@@ -1,0 +1,5 @@
+# ビルドコンテキストに不要なファイルを含めない
+.git
+.gitignore
+README.md
+.github
